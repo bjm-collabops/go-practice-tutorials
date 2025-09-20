@@ -1,7 +1,9 @@
 package main
 
 import (
-	"go-practice/internal/examples"
+	"go-practice/internal/functions.go"
+	"go-practice/internal/loops"
+	"go-practice/internal/standard_library"
 	"go-practice/internal/types"
 )
 
@@ -15,10 +17,21 @@ func main() {
 	types.DemonstrateRuneType()
 
 	// Demonstrate basic printing
-	examples.DemonstrateBasicPrinting()
-	examples.DemonstrateFormattedPrinting()
+	types.DemonstrateBasicPrinting()
+	types.DemonstrateFormattedPrinting()
 
 	// Demonstrate arrays and slices
 	types.DemonstrateArrays()
 
+	// Demonstrate string standard library
+	standard_library.RunStringStandardLibrary()
+
+	loops.RunLoops()
+	loops.RunRangeLoops()
+
+	functions.SayGreeting("John")
+	functions.SayToAll([]string{"John", "Jane", "Jim", "Jill"}, functions.SayGreeting)
+	functions.getInitials("John Doe")
+	functions.getInitials("John")
+	functions.getInitials("John Doe Smith")
 }

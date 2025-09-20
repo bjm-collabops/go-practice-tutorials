@@ -23,6 +23,7 @@ func DemonstrateArrays() {
 	fmt.Println("Slice after append:", scores)
 
 	// 슬라이스로 선언
+	// *** Normally we use slices instead of arrays. ***
 	var fruitSlice []string
 	fruitSlice = append(fruitSlice, "apple", "banana")
 	fmt.Println("Slice:", fruitSlice)
