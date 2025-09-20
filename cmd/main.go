@@ -31,7 +31,7 @@ func main() {
 
 	functions.SayGreeting("John")
 	functions.SayToAll([]string{"John", "Jane", "Jim", "Jill"}, functions.SayGreeting)
-	functions.getInitials("John Doe")
-	functions.getInitials("John")
-	functions.getInitials("John Doe Smith")
+	functions.GetInitials("John Doe")
+	functions.GetInitials("John")
+	functions.GetInitials("John Doe Smith")
 }
